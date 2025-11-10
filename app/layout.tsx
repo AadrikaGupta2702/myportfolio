@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="bg-black text-white overflow-x-hidden">
-        <SceneCanvas />
+        {/* <SceneCanvas /> */}
         {children}
       </body>
     </html>

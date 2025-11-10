@@ -14,12 +14,12 @@ export default function HomePage() {
         {/* Hero should be full width */}
         <section className="w-full">
           <Hero />
+          <About />
         </section>
 
         {/* Wrap other sections in the container for consistent layout */}
         <div className="container mx-auto px-4">
-          <About />
-          {/* <Services /> */}
+          <Services />
           <Projects />
           <Awards />
           <Contact />

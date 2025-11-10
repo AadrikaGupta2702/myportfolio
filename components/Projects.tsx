@@ -1,4 +1,3 @@
-// components/Projects.tsx
 "use client";
 import { useEffect, useState } from "react";
 import { getCollection } from "@/lib/firestoreHelpers";
@@ -13,55 +12,80 @@ export default function Projects() {
   }, []);
 
   return (
-    <section id="projects" className="py-20">
-      <h2 className="text-3xl font-bold mb-10 text-center">My Work</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section
+      id="projects"
+      className="py-24 px-6 sm:px-10 md:px-20 bg-[--color-section-dark] text-white"
+    >
+      <h2 className="text-4xl md:text-5xl font-bold mb-14 text-center">
+        My <span className="text-[--color-accent]">Work</span>
+      </h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((p) => (
-          <div key={p.id} className="bg-white/5 rounded-xl overflow-hidden">
+          <div
+            key={p.id}
+            className="group bg-[--color-section-card] border border-white/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-[0_0_20px_-5px_var(--color-accent)] transition-all duration-300"
+          >
+            {/* Image */}
             {p.imageFile ? (
               <img
                 src={`/images/projects/${p.imageFile}`}
                 alt={p.title}
-                className="w-full h-[240px] object-cover"
+                className="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500"
               />
             ) : (
-              <div className="w-full h-44 bg-white/6 flex items-center justify-center">
+              <div className="w-full h-60 flex items-center justify-center bg-white/5 text-gray-400">
                 No image
               </div>
             )}
-            <div className="p-6">
-              <h3 className="text-xl font-semibold">{p.title}</h3>
-              <p className="text-gray-300 mt-2">{p.description}</p>
+
+            {/* Content */}
+            <div className="p-6 space-y-3">
+              <h3 className="text-2xl font-semibold text-[#ff9238] transition-colors">
+                {p.title}
+              </h3>
+
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {p.description}
+              </p>
+
+              {/* Awards */}
               {p.awards && p.awards.length > 0 && (
-  <ul className="mt-3 space-y-1">
-    {p.awards.map((award: string, i: number) => (
-      <li
-        key={i}
-        className="text-yellow-400 text-sm font-medium flex items-center gap-1"
-      >
-        🏆 {award}
-      </li>
-    ))}
-  </ul>
-)}
+                <ul className="mt-3 space-y-1">
+                  {p.awards.map((award: string, i: number) => (
+                    <li
+                      key={i}
+                      className="text-[--color-accent-light] text-sm font-medium flex items-center gap-1"
+                    >
+                      🏆 {award}
+                    </li>
+                  ))}
+                </ul>
+              )}
 
-
-              <div className="mt-4 flex gap-3">
-                {p.link && (
+              {/* Buttons */}
+              {p.link && (
+                <div className="pt-4">
                   <a
                     href={p.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="px-3 py-2 bg-sky-600 rounded text-white"
+                    className="inline-block px-4 py-2 bg-[--color-accent] white font-semibold rounded-md hover:bg-[--color-accent-light] transition"
                   >
-                    Visit
+                    Visit Project →
                   </a>
-                )}
-              </div>
+                </div>
+              )}
             </div>
           </div>
         ))}
       </div>
+
+      {projects.length === 0 && (
+        <p className="text-center text-gray-400 mt-12">
+          No projects added yet.
+        </p>
+      )}
     </section>
   );
 }
