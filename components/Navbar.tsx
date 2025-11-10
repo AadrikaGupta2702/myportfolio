@@ -51,7 +51,7 @@ export default function Navbar() {
             <a
               href="/images/stock/cv.pdf"
               download
-              className="px-4 py-2 bg-white/[0.3] text-black font-bold rounded-md hover:bg-sky-400 hover:text-black transition"
+              className="px-4 py-2 bg-white/[0.3] text-black font-bold rounded-md hover:bg-[var(--color-hehe)] hover:text-black transition"
             >
               Download CV
             </a>

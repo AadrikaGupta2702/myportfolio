@@ -41,7 +41,7 @@ export default function Projects() {
 
             {/* Content */}
             <div className="p-6 space-y-3">
-              <h3 className="text-2xl font-semibold text-sky-400 transition-colors">
+              <h3 className="text-2xl font-semibold text-[var(--color-hehe)] transition-colors">
                 {p.title}
               </h3>
 
