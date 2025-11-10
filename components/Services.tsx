@@ -26,7 +26,7 @@ export default function Services() {
           services.map((s) => (
             <div
               key={s.id}
-              className="group p-8 bg-white/5 border border-white/10 rounded-2xl transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_25px_-5px_var(--color-accent)] hover:bg-[#ff9238]/[0.1] flex flex-col items-start gap-5"
+              className="group p-8 bg-white/5 border border-white/10 rounded-2xl transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_25px_-5px_var(--color-accent)] hover:bg-sky-400/[0.1] flex flex-col items-start gap-5"
             >
               {/* --- ICON --- */}
               <div className="w-16 h-16 rounded-xl bg-[--color-accent]/10 border border-[--color-accent]/30 flex items-center justify-center group-hover:bg-[--color-accent]/20 transition">

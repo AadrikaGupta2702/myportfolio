@@ -56,7 +56,7 @@ export default function About() {
                 onClick={() => setActiveTab(tab)}
                 className={`capitalize pb-2 border-b-2 transition-colors ${
                   activeTab === tab
-                    ? "border-[#ff7a1a] text-[--color-accent]"
+                    ? "border-sky-400 text-[--color-accent]"
                     : "border-transparent text-gray-400 hover:text-[--color-accent-light]"
                 }`}
               >
@@ -73,7 +73,7 @@ export default function About() {
               {aboutData.skills &&
                 Object.entries(aboutData.skills).map(([category, items]) => (
                   <div key={category}>
-                    <h3 className="text-[#ff9238] font-semibold mb-3">
+                    <h3 className="text-sky-400 font-semibold mb-3">
                       {category}
                     </h3>
                     <div className="flex flex-wrap justify-center md:justify-start gap-2">
@@ -102,7 +102,7 @@ export default function About() {
                   >
                     <div className="flex justify-between items-start gap-4 flex-col md:flex-row">
                       <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-[#ff9238]">
+                        <h3 className="text-lg font-semibold text-sky-400">
                           {exp.title}
                         </h3>
                         {exp.timespan && (
@@ -142,7 +142,7 @@ export default function About() {
                     key={i}
                     className="bg-white/5 border border-white/10 rounded-xl p-5 hover:bg-white/10 transition"
                   >
-                    <h3 className="text-lg font-semibold text-[#ff9238]">
+                    <h3 className="text-lg font-semibold text-sky-400">
                       {edu.degree}
                     </h3>
                     {(edu.duration || edu.institution) && (

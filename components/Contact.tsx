@@ -52,13 +52,13 @@ export default function Contact() {
           <div className="space-y-5 text-gray-300">
             {/* Email */}
             <div className="flex items-center gap-4">
-              <Mail className="text-[#ff8226]" size={20} />
+              <Mail className="text-sky-400" size={20} />
               <span className="text-base">yashdingar17@gmail.com</span>
             </div>
 
             {/* Phone */}
             <div className="flex items-center gap-4">
-              <Phone className="text-[#ff8226]" size={20} />
+              <Phone className="text-sky-400" size={20} />
               <span className="text-base">7007651602</span>
             </div>
           </div>
@@ -91,13 +91,13 @@ export default function Contact() {
             </a>
           </div>
           {/* Download CV Button */}
-            <a
+            {/* <a
               href="/images/stock/cv.pdf"
               download
-              className="inline-block mt-8 bg-[white]/[0.3] text-black font-semibold px-6 py-3 rounded-md hover:bg-[#ff8226] transition"
+              className="inline-block mt-8 bg-[white]/[0.3] text-black font-semibold px-6 py-3 rounded-md hover:bg-sky-400 transition"
             >
               Download CV
-            </a>
+            </a> */}
 
         </div>
 
@@ -140,7 +140,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3 bg-[#ff8226]/[0.2] text-white font-semibold rounded-md hover:bg-[--color-accent-light] transition"
+              className="w-full py-3 bg-sky-400/[0.2] text-white font-semibold rounded-md hover:bg-[--color-accent-light] transition"
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
