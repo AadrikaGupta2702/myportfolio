@@ -14,7 +14,7 @@ export default function Hero() {
       />
 
       {/* Text overlay */}
-      <div className="relative z-10 w-full px-6 sm:px-10 md:px-16 lg:px-24">
+      <div className="relative z-10 px-10 max-w-[300px] md:max-w-[500px] lg:max-w-[500px]  ">
         <div className="max-w-3xl">
           {/* Subtitle */}
           <p className="text-[var(--color-hehe)] text-lg md:text-xl font-medium mb-4">
@@ -25,7 +25,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Hi, I'm <span className="text-[var(--color-hehe)]">Yash Dingar</span>
           </h1>
-          <p className="text-gray-300 text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
+          <p className="text-gray-400 text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
           Frontend Developer · Student · Passionate about creating immersive
           digital experiences with{" "}
           <span className="text-[var(--color-hehe)] font-medium">React</span>,{" "}
