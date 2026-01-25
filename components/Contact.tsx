@@ -102,7 +102,7 @@ export default function Contact() {
         </div>
 
         {/* RIGHT SIDE — CONTACT FORM */}
-        <div className="w-full md:w-1/2 bg-white/5 border border-white/10 rounded-2xl p-6 shadow-lg">
+        {/* <div className="w-full md:w-1/2 bg-white/5 border border-white/10 rounded-2xl p-6 shadow-lg">
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label className="block mb-2 text-sm font-semibold">Name</label>
@@ -159,7 +159,7 @@ export default function Contact() {
               </p>
             )}
           </form>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -20,7 +20,7 @@ export default function HomePage() {
 
         {/* Wrap other sections in the container for consistent layout */}
         <div className="container mx-auto px-4">
-          <Services />
+          {/* <Services /> */}
           <Projects />
           <Awards />
           <Contact />
