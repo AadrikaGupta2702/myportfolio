@@ -17,7 +17,7 @@ export default function Navbar() {
           onClick={() => scrollTo("hero")}
           className="text-4xl font-bold cursor-pointer"
         >
-          Yash.
+          Aadrika.
         </h1>
 
         {/* Hamburger for mobile */}

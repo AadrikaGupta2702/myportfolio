@@ -1,6 +1,7 @@
 "use client";
 
 import { Linkedin, Instagram, Twitter, ArrowUp } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   const scrollTo = (id: string) => {
@@ -17,10 +18,10 @@ export default function Footer() {
         {/* Left Section - Branding */}
         <div className="text-center md:text-left space-y-2">
           <h2 className="text-2xl font-bold text-[--color-accent]">
-            Yash Dingar
+            Aadrika Gupta
           </h2>
           <p className="text-sm text-gray-400">
-            Crafting clean, functional & creative web experiences.
+            Crafting clean, functional, and creative product experiences.
           </p>
         </div>
 
@@ -40,29 +41,44 @@ export default function Footer() {
         {/* Right Section - Social Links */}
         <div className="flex gap-6 text-xl justify-center">
           <a
-            href="https://www.linkedin.com/in/yash-dingar-946688276/"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-[--color-accent] transition"
-          >
-            <Linkedin size={22} />
-          </a>
-          <a
-            href="https://www.instagram.com/technoslive_/"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-[--color-accent] transition"
-          >
-            <Instagram size={22} />
-          </a>
-          <a
-            href="https://x.com/q9kawaii"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-[--color-accent] transition"
-          >
-            <Twitter size={22} />
-          </a>
+                  href="https://www.instagram.com/aadrika.0212/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-[--color-accent] transition"
+                >
+                  <Instagram size={22} />
+                </a>
+                <a
+                  href="https://x.com/AadrikaG2611"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-[--color-accent] transition"
+                >
+                  <Twitter size={22} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/aadrika-gupta-32a3222b8/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-[--color-accent] transition"
+                >
+                  <Linkedin size={22} />
+                </a>
+          
+                <a
+                  href="https://www.behance.net/aadrikagupta1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-[--color-accent] transition"
+                >
+                  <Image
+                    src="/images/logos/behance.png"
+                    alt="LinkedIn"
+                    width={22}
+                    height={22}
+                    className="hover:opacity-80 transition"
+                  />
+                </a>
         </div>
       </div>
 
@@ -71,7 +87,7 @@ export default function Footer() {
 
       {/* Copyright Section */}
       <div className="text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Yash Dingar. All rights reserved.
+        © {new Date().getFullYear()} Aadrika Gupta. All rights reserved.
       </div>
 
       {/* Back to Top Button */}

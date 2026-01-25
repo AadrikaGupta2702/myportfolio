@@ -18,19 +18,16 @@ export default function Hero() {
         <div className="max-w-3xl">
           {/* Subtitle */}
           <p className="text-[var(--color-hehe)] text-lg md:text-xl font-medium mb-4">
-            Full Stack Developer
+            Industrial Designer
           </p>
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Hi, I'm <span className="text-[var(--color-hehe)]">Yash Dingar</span>
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+            Hi, I'm <span className="text-[var(--color-hehe)]">Aadrika Gupta</span>
           </h1>
           <p className="text-gray-400 text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
-          Frontend Developer · Student · Passionate about creating immersive
-          digital experiences with{" "}
-          <span className="text-[var(--color-hehe)] font-medium">React</span>,{" "}
-          <span className="text-[var(--color-hehe)] font-medium">Next.js</span>, and modern
-          web technologies.
+          Industrial Designer · Student
+Passionate about shaping intuitive, human-centered products through research, form exploration, and hands-on prototyping.
         </p>
         </div>
       </div>
