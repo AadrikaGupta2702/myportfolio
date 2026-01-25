@@ -22,9 +22,10 @@ export default function Hero() {
           </p>
 
           {/* Heading */}
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight md:whitespace-nowrap">
             Hi, I'm <span className="text-[var(--color-hehe)]">Aadrika Gupta</span>
           </h1>
+
           <p className="text-gray-400 text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
           Industrial Designer · Student
 Passionate about shaping intuitive, human-centered products through research, form exploration, and hands-on prototyping.
