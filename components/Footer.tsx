@@ -39,7 +39,7 @@ export default function Footer() {
         </ul>
 
         {/* Right Section - Social Links */}
-        <div className="flex gap-6 text-xl justify-center">
+        {/* <div className="flex gap-6 text-xl justify-center">
           <a
                   href="https://www.instagram.com/aadrika.0212/"
                   target="_blank"
@@ -79,7 +79,7 @@ export default function Footer() {
                     className="hover:opacity-80 transition"
                   />
                 </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Divider Line */}
