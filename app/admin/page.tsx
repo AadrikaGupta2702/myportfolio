@@ -10,7 +10,7 @@ export default function AdminLogin() {
     const provider = new GoogleAuthProvider();
     const res = await signInWithPopup(auth, provider);
     const email = res.user.email;
-    if (email === "yashdingar17@gmail.com") router.push("/admin/dashboard");
+    if (email === "aadrikag02dec2005@gmail.com") router.push("/admin/dashboard");
     else alert("Unauthorized — use admin email");
   };
 
