@@ -14,7 +14,7 @@ export default function Hero() {
       />
 
       {/* Text overlay */}
-      <div className="relative z-10 px-10 max-w-[300px] md:max-w-[500px] lg:max-w-[500px] pl-30">
+      <div className="relative z-10 px-10 max-w-[300px] md:max-w-[600px] lg:max-w-[700px]">
         <div className="max-w-3xl">
           {/* Subtitle */}
           <p className="text-[var(--color-hehe)] text-lg md:text-xl font-medium mb-4">
