@@ -1,63 +1,26 @@
 @import "tailwindcss";
 
-/* ---------- GLOBAL COLOR SYSTEM ---------- */
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --accent: #F5F5DC;
-  /* --accent: #00bcff; */
-  --accent-dark: #ff6700;
-  --accent-light: #ffa64d;
-  --section-dark: #0a0a0a;
-  --section-card: #141414;
-  --color-hehe: var(--accent);
 }
 
-/* ---------- TAILWIND THEME CONFIG ---------- */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-accent: var(--accent);
-  --color-accent-dark: var(--accent-dark);
-  --color-accent-light: var(--accent-light);
-  --color-section-dark: var(--section-dark);
-  --color-section-card: var(--section-card);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-/* ---------- DARK MODE ---------- */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
+    --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
 
-/* ---------- BASE STYLES ---------- */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
-  scroll-behavior: smooth;
-}
-
-/* ---------- MODERN SCROLLBAR ---------- */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-hehe);
-  border-radius: 9999px;
-  transition: background 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, var(--accent-light), var(--accent));
+  font-family: Arial, Helvetica, sans-serif;
 }
