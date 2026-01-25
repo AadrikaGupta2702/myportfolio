@@ -2,7 +2,7 @@ import "./globals.css";
 import SceneCanvas from "@/components/3D/SceneCanvas";
 
 export const metadata = {
-  title: "Yash Dingar — Portfolio",
+  title: "Aadrika Gupta — Portfolio",
   description: "Modular portfolio with 3D background and admin control",
 };
 
