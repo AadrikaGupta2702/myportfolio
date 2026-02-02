@@ -27,8 +27,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-gray-400 text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
-          Industrial Designer · Student
-Passionate about shaping intuitive, human-centered products through research, form exploration, and hands-on prototyping.
+          I design calm, intuitive, and inclusive product systems inspired by natural logic, focused on reducing cognitive load and enabling effortless interaction at scale.
         </p>
         </div>
       </div>
